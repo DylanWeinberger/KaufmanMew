@@ -288,6 +288,55 @@ body {
 
 
 }
+
+@media all and (min-width: 1100px) {
+	.container {
+		width: 900px;
+		margin: 0 auto;
+	}
+
+	.slider {
+		width: 900px;
+	}
+
+	.logo { 
+		width: 400px;
+		margin-left: 35px;
+	}
+
+	.logo img {
+		width: 100%;
+	}
+
+	.contact {
+		left: 30px;
+	}
+
+	.topBar {
+		width: 900px;
+		left: 35px;
+	}
+
+	.leftBar {
+		left: -230px;
+	}
+
+	.welcome {
+		width: 350px;
+		left: 270px;
+	}
+
+	.rightBar {
+		left: 200px;
+		top: -1080px;
+	}
+
+	.tweet {
+		left: 680px;
+		top: -1500px;
+		width: 250px;
+	}
+}
 	/*
 	 .container {
 		margin: 0 auto;
