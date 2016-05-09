@@ -13,7 +13,7 @@ body {
 
 .contact {
 	text-align: center;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Arimo', sans-serif;
 }
 
 .slider {
@@ -22,9 +22,9 @@ body {
 	left: 0px;
 }
 
-.slider img {
+/*.slider img {
 	width: 310px;
-}
+}*/
 
 .hamburger {
   display: block;
@@ -120,7 +120,7 @@ body {
 	position: relative;
 	top: -220px;
 	width: 300px;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Arimo', sans-serif;
 }
 
 .rightBar {
@@ -220,10 +220,10 @@ body {
 		width: 700px;
 		margin-left: 34px;
 	}
-
+/*
 	.slider img {
 		width: 100%;
-	}
+	}*/
 
 	.hamburger {
 		display: none;
@@ -240,7 +240,13 @@ body {
 
 	.nav a {
 		text-decoration: none;
-		color: rgba(11,72,107, 1);
+		color: rgba(11,72,107, .6);
+		transition: .7s;
+	}
+
+	.nav a:hover {
+		/*color: rgba(11,72,107, 1);*/
+		color: rgba(3,54,73, 1);
 	}
 
 	.leftBar {
@@ -279,7 +285,7 @@ body {
 
 	.footer {
 		top: 0px;
-		width: 105%;
+		width: 102%;
 	}
 
 	body {
@@ -297,11 +303,73 @@ body {
 
 	.slider {
 		width: 900px;
+		height: 300px;
+		background-color: rgba(143,154,156, .6);
+		overflow: hidden;
+	}
+
+	.slide {
+		display: none;
+		width: 100%;
+		
+	}
+
+	.slide.active-slide {
+		display: block;
+	}
+
+	.leftImg {
+		width: 350px;
+		position: absolute;
+		top: -350px;
+		left: -205px;
+		border-radius: 6px;
+		opacity: 0;
+		transition: 3s;
+
+	}
+
+	.leftImg.leftActive {
+		left: -25px;
+		top: 25px;
+		opacity: .7;
+	}
+	
+	.rightImg {
+		width: 350px;
+		position: absolute;
+		left: 900px;
+		top: 300px;
+		opacity: 0;
+		border-radius: 6px;
+		transition: 3s;
+	}
+
+	.rightImg.rightActive {
+		left: 600px;
+		top: 100px;
+		opacity: .7;
+
+	}
+
+	.slideContent {
+		width: 280px;
+		font-size: 28px;
+		position: absolute;
+		left: 332px;
+		top: 20px;
+		z-index: 200;
+		font-family: 'Arimo', sans-serif;
+		color: rgba(3,54,73, 1);
+		-ms-transform: rotate(-7deg); /* IE 9 */
+    	-webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    	transform: rotate(-7deg);
 	}
 
 	.logo { 
 		width: 400px;
 		margin-left: 35px;
+		height: 150px;
 	}
 
 	.logo img {
@@ -315,6 +383,10 @@ body {
 	.topBar {
 		width: 900px;
 		left: 35px;
+	}
+
+	.nav a {
+		color
 	}
 
 	.leftBar {
@@ -333,7 +405,7 @@ body {
 
 	.tweet {
 		left: 680px;
-		top: -1500px;
+		top: -1450px;
 		width: 250px;
 	}
 }
