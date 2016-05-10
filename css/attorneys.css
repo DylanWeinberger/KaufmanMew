@@ -1,0 +1,437 @@
+body {
+	height:100%;
+}
+
+.container {
+	width: 320px;
+	margin: 0 auto;
+	height: 2000px;
+}
+
+.logo img {
+	width: 300px;
+}
+
+.contact {
+	text-align: center;
+	position: relative;
+	top: -50px;
+	font-family: 'Arimo', sans-serif;
+}
+
+.slider {
+	width: 90%;
+	height: 250px;
+	position: relative;
+	left: 5%;
+	background-color: rgba(11,72,107, 1);
+	overflow: hidden;
+}
+
+.slider p {
+	font-size: 18px;
+	text-align: center;
+	font-family: 'Arimo', sans-serif;
+	color: rgba(245,241,233, .7);
+}
+
+.introImage {
+	width: 100%;
+}
+
+
+
+
+.hamburger {
+  display: block;
+  position: relative;
+  left: 5%;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  font-size: 0px;
+  cursor: pointer;
+  background-color: rgba(11,72,107, 1);
+  border: none;
+}
+
+.hamburger:focus {
+	outline: none;
+}
+
+.hamburger span {
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: 4px;
+	right: 4px;
+	height: 4px;
+	background-color: rgba(241,241,220
+,1);
+}
+
+.hamburger span::before,
+.hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: rgb(241,241,220
+);
+  content: "";
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.hamburger span::before {
+  top: -15px;
+  transition-property: top, transform;
+}
+
+.hamburger span::after {
+  bottom: -15px;
+  transition-property: bottom, transform;
+}
+
+.nav ul {
+	list-style: none;
+}
+
+.nav li {
+	padding: 5px;
+}
+
+.nav a {
+	color: rgba(245,241,233, 1);
+	position: relative;
+	left: -40px;
+	font-family: 'Arimo', sans-serif;
+}
+
+.nav{
+	position: relative;
+	left: -330px;
+	background-color: rgba(11,72,107, 1);
+	width: 320;
+	transition: .7s;
+	opacity: 0;
+	z-index: 999;
+}
+
+.nav.navActive {
+	left: 0px;
+	margin-left: 5%;
+	transition: .7s;
+	opacity: 1;
+}
+
+.disclaimer {
+	display: none;
+}
+
+.topBar{
+	position: relative;
+	top: -220px;
+}
+
+
+
+.rightBar {
+	position: relative;
+	top: -220px;
+}
+
+.content {
+	position: relative;
+	top: -200px;
+	font-family: 'Arimo', sans-serif;
+	margin-left: 5%;
+	margin-right: 5%;
+
+}
+
+.content h2 {
+	text-align: center;
+	color: rgba(11,72,107, 1);
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.content h3 {
+	text-align: center;
+	color: rgba(11,72,107, 1);
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.content p {
+	line-height: 1.5em;
+}
+
+.content li {
+	line-height: 1.5em;
+}
+
+.attorneyImg {
+	margin-left: 10%;
+}
+
+.attorney {
+	display: none;
+	opacity: 0;
+	transition: 1s;
+}
+
+.attorney.activeAttorney {
+	display: block;
+	opacity: 1;
+}
+
+
+.footer {
+	background-color: rgba(11,72,107, 1);
+	color: rgba(245,241,233, .7);
+	position: relative;
+	top: 1300px;
+	width: 330px;
+	left: -10px;
+	height: 355px;
+
+}
+
+.footer p {
+	text-align: center;
+}
+
+.footNav ul {
+	display: inline-block;
+	position: relative;
+	left: -25px;
+}
+
+.footNav li {
+	list-style: none;
+	display: block;
+	padding: 10px;
+}
+
+.footNav a {
+	color: rgba(245,241,233, .7);
+	transition: .7s;
+
+}
+
+.footNav a:hover {
+	color: rgba(245,241,233, 1);
+}
+
+.leftBar {
+	display: none;
+}
+
+.lawProfiles {
+	color: rgba(11,72,107, .7);
+	transition: .7s;
+}
+.lawProfiles li:hover {
+	cursor: pointer;
+	color: rgba(11,72,107, 1);
+}
+
+.profiles img {
+	width: 200px;
+}
+
+/*Galaxy S5*/
+@media all and (min-width: 360px) {
+
+	.footer {
+		width: 350px;
+	}
+
+	body{
+		height: 1650px;
+	}
+}
+
+@media all and (min-width: 375px) {
+	
+
+	.logo {
+		left: 22px;
+	}
+
+	.slider {
+		width: 90%;
+	}
+
+	.footer {
+		position: relative;
+		left: -25px;
+		width: 380px;
+		padding-left: 20px;
+	}
+}
+
+@media all and (min-width: 411px) {
+	.footer {
+		width: 420px;
+		position: relative;
+		left: -45px;
+
+	}
+}
+
+@media all and (min-width: 768px) {
+	.container {
+		width: 768px;
+		margin: 0 auto;
+		height: 1100px;
+	}
+
+	.logo img {
+		width: 320px;
+		margin-left: 5%;
+	}
+
+	.contact {
+		text-align: center;
+		position: relative;
+		top: -180px;
+		left: 400px;
+		font-size: 18px;
+		width: 350px;
+	}
+
+	.slider {
+		top: -80px;
+		width: 700px;
+		left: 5%;
+		height: 300px;
+	}
+
+
+	.hamburger {
+		display: none;
+	}
+
+	.nav {
+	left: 0px;
+	background-color: rgba(11,72,107, 0);
+	transition: .7s;
+	opacity: 1;
+	margin-left: 34px;
+	width: 225px;
+	}
+
+	.nav a {
+		text-decoration: none;
+		color: rgba(11,72,107, .6);
+		transition: .7s;
+	}
+
+	.nav a:hover {
+		/*color: rgba(11,72,107, 1);*/
+		color: rgba(11,72,107, 1);
+	}
+
+	.leftBar {
+		display: block;
+		width: 1px;
+		height: 400px;
+		position: relative;
+		top: -230px;
+		left: -160px;
+	}
+
+
+	
+	.topBar {
+		top: -250px;
+		width: 700px;
+	}
+
+	.content {
+		width: 60%;
+		position: relative;
+		left: 35%;
+		top: -660px;
+	}
+
+	.rightBar {
+	display: none;
+	}
+
+
+
+	.footer {
+		top: 1550px;
+		width: 102%;
+		left: -10px;
+	}
+
+	body {
+		height: 1300px;
+	}
+
+
+}
+
+@media all and (min-width: 1100px) {
+	.container {
+		width: 900px;
+		margin: 0 auto;
+	}
+
+	.contact {
+		position: relative;
+		top: -120px;
+		left: 600px;
+	}
+
+	.slider {
+		width: 900px;
+		height: 300px;
+		background-color: rgba(11,72,107, 1);
+		overflow: hidden;
+	}
+	
+	.slider img {
+		width: 900px;
+	}
+
+	.logo { 
+		width: 400px;
+		margin-left: 35px;
+		height: 150px;
+	}
+
+	.logo img {
+		width: 100%;
+	}
+
+
+
+	.topBar {
+		width: 900px;
+		left: 35px;
+	}
+
+	.nav a {
+		color
+	}
+
+	.leftBar {
+		left: -230px;
+	}
+
+
+
+	.rightBar {
+		left: 200px;
+		top: -1080px;
+	}
+}

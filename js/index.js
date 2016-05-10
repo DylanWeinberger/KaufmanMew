@@ -1,6 +1,7 @@
 $(document).ready(function(){
-	$(".leftImg").addClass("leftActive");
-	$(".rightImg").addClass("rightActive")
+	$(".leftImg").delay(1000).addClass("leftActive");
+	$(".rightImg").addClass("rightActive");
+	$(".slideContent").addClass("contentActive");
 	$(".hamburger").click(function(){
 		if (!$(".nav").hasClass("navActive")){
 			$(".nav").addClass("navActive");
@@ -15,6 +16,7 @@ $(document).ready(function(){
         var nextSlide = currentSlide.next();
         var leftImg = $('.leftImg');
         var rightImg = $('.rightImg');
+        var slideContent = $('.slideContent');
 		
 		if(nextSlide.length === 0) {
             nextSlide = $('.slide').first();
@@ -23,9 +25,11 @@ $(document).ready(function(){
         currentSlide.fadeOut(1000).removeClass("active-slide");
         leftImg.removeClass("leftActive");
         rightImg.removeClass("rightActive");
+        slideContent.removeClass("contentActive");
         nextSlide.fadeIn(1000).addClass("active-slide");
         leftImg.addClass("leftActive");
         rightImg.addClass("rightActive");
+        slideContent.addClass("contentActive");
 
     };
 	
